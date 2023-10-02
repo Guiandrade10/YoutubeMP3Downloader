@@ -31,19 +31,19 @@ function App() {
 
   return (
     <div className="app">
-      <span className="logo">youtube2mp3</span>
+      <span className="logo">ONBARLI</span>
       <section className="content">
-        <h1 className="content_title">YouTube to MP3 Converter</h1>
+        <h1 className="content_title">Youtube</h1>
         <p className="content_description">
-          Transform YouTube videos into MP3s in just a few clicks!
+          Baixe suas musicas diretamente do Youtube totalmente de graça com apenas 1 click!
         </p>
 
         <form onSubmit={handleSubmit} className="form">
-          <input ref={inputUrlRef} placeholder="Paste a Youtube video URL link..." className="form_input" type="text" />
-          <button type="submit" className="form_button">Search</button>
+          <input ref={inputUrlRef} placeholder="Cole aqui o Link do seu video..." className="form_input" type="text" />
+          <button type="submit" className="form_button">Pesquisar</button>
         </form>
 
-        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">Download MP3</a> : ''}
+        {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">Baixar Música</a> : ''}
         
       </section>
     </div>
